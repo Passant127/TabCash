@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Segoe UI";
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.nav-link{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+
+}
+.home {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(148, 177, 222, 0.74) !important;
+  color: #000000;
+}
+.line {
+  box-sizing: border-box;
+
+  height: 20px;
+
+  border-left: 1px solid #000000;
+}
+.help {
+  font-weight: 400;
+  font-size: 30px;
+  color: #0d47a1;
+  line-height: 39.9px;
+}
+.handle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26.6px;
+  color: #343536;
+}
+.control {
+  font-size: 80px;
+  line-height: 91.99px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.wallete img {
+  animation: scroll 3s ease-in-out infinite;
+}
+@keyframes scroll {
+  10% {
+    top: 10px;
+  }
+
+  20% {
+    top: 20px;
+  }
+
+  30% {
+    top: 30px;
+  }
+
+  40% {
+    top: 10px;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  60% {
+    top: 30px;
+  }
+}
+.download {
+  background: linear-gradient(175.7deg, #0d47a1 -147.71%, #ffffff 241.17%);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 39.9px;
+}
+.login {
+  color: white !important;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 71, 161, 0.256) 0%,
+    rgba(13, 71, 161, 0.8) 100%
+  );
+  border-radius: 12px;
+  
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+}
