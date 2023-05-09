@@ -1,1 +1,212 @@
+.nav-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+.home {
+  height: 130vh;
+  background: linear-gradient(#c1c4c8, #456eae);
+  color: #000000;
+}
+.land {
+  height: 130vh;
+}
+.line {
+  box-sizing: border-box;
 
+  height: 20px;
+
+  border-left: 1px solid #000000;
+}
+.help {
+  font-weight: 400;
+  font-size: 30px;
+  color: #0d47a1;
+  line-height: 39.9px;
+}
+.handle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26.6px;
+  color: #343536;
+}
+.control {
+  font-size: 80px;
+  line-height: 91.99px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* .wallete img {
+  animation: scroll 3s ease-in-out infinite;
+}
+@keyframes scroll {
+  10% {
+    top: 10px;
+  }
+
+  20% {
+    top: 20px;
+  }
+
+  30% {
+    top: 30px;
+  }
+
+  40% {
+    top: 10px;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  60% {
+    top: 30px;
+  }
+} */
+.download,
+.readmore {
+  background-color: #0d47a1;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 39.9px;
+}
+.readmore {
+  font-size: 20px;
+}
+.login {
+  color: white !important;
+  background-color: #0d47a1;
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.head {
+  /* width: 70%; */
+  margin: 0px 50px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+  color: #0d47a1;
+}
+.details {
+  margin: 0px 50px;
+  /* width: 70%; */
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+
+  color: #000000;
+}
+.how-to-use {
+  margin: 0px 50px;
+  /* width: 70%; */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #065e92;
+}
+.whatTitle,
+.aboutTitle {
+  color: #0d47a1;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.aboutslogan {
+  font-weight: 600;
+  font-size: 24px;
+
+  color: #0d47a1;
+}
+.aboutdetails {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+
+  color: #000000;
+}
+/* .about{
+  background-color:#e2e8f1;
+} */
+.circle {
+  position: absolute;
+
+  left: 30px;
+  top: 50px;
+}
+.vectorback {
+  right: 0px;
+
+  height: 5%;
+}
+.home {
+  z-index: 99999999999;
+}
+.servicetitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #0d47a1;
+}
+.servicedetails {
+ 
+  font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+
+  color: #000000;
+}
+
+footer {
+  width: 100%;
+  
+  background: rgba(13, 71, 161, 0.17);
+}
+.footer-title
+{
+  font-size: 33px;
+line-height: 38px;
+font-weight: 700;
+
+
+
+color: #0D47A1;
+
+}
+
+h6{
+  font-weight: unset;
+  font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+
+}
+.icons{
+  font-size: 35px;
+
+}
+.icon{
+  margin-top: 10px;
+  text-align: right;
+  background: #0D47A1;
+  color: white;
+  border-radius: 50%;
+  padding: 18px 0px;
+}
+.dropmail{
+  border: unset;
+  background-color: unset;
+  border-bottom: 3px solid  #0D47A1 ;
+  outline: unset;
+}
+.linelegal{
+  border: #0d47a1 1px solid;
+}

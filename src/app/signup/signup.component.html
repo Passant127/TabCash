@@ -1,1 +1,51 @@
-<p>signup works!</p>
+<div class="SignUpsection position-absolute">
+    <div class="circle w-50 position-relative top-0 start-0">
+      <img src="../assets/Ellipse 3.png" class="w-100" alt="">
+    </div>
+    <div class="SignUpinfo  position-absolute top-0 start-0 end-0 bottom-0 overflow-hidden ps-3">
+      <div class="content d-flex justify-content-center align-content-center pt-5 row  p-5">
+        <div class="SignUpform m-auto col-sm-6 col-6 col-md-6 p-5  ">
+        <img src="../assets/waving-hand.png" class="mb-2" alt="">
+          <p class="fw-bolder fs-3">Welcome back!</p>
+          <p>Please sign up to access your account.</p>
+          <form class="inputs " [formGroup]="registerForm" (ngSubmit)="onsubmit(registerForm)" >
+            <label for="name" class="mb-2 " >Name</label>
+            <input type="text" name="name" id="name" class="form-control nameinput mb-4" formControlName="name">
+            <div *ngIf="registerForm.get('name')?.errors && registerForm.get('name')?.touched" class="alert alert-danger">
+                <!-- b3ml getError l required w 7agat de w errors l bta3a kolha zai mna 3amla hena  -->
+                <p *ngIf="registerForm.get('name')?.getError('required')">name is required</p>
+                <p *ngIf="registerForm.get('name')?.getError('maxlength')" >max len 10</p>
+                <p *ngIf="registerForm.get('name')?.getError('minlength')" >min len 5</p>
+            </div>
+            <label for="phone" class="mb-1 " >Phone number</label>
+            <input type="text" phone="phone" id="phone" class="form-control phoneinput mb-4" formControlName="phone">
+              <label for="email" class="mb-1 " >Email</label>
+              <input type="text" name="email" id="email" class="form-control emailinput mb-4" formControlName="email">
+              <p *ngIf="err" class="text-danger">Email is used</p>
+              <label for="password" class="mb-1" >Password</label>
+              <input type="password" name="password" id="password" class="form-control passwordinput mb-4" formControlName="password">
+              <label for="rePassword" class="mb-1" >Confirm password</label>
+              <input type="password" name="rePassword" id="rePassword" class="form-control rePasswordinput mb-4" formControlName="rePassword">
+              <!-- <label for="NationalID" class="mb-1 " >National ID</label>
+              <input type="text" NationalID="NationalID" id="NationalID" class="form-control NationalIDinput mb-4" formControlNationalID="NationalID"> -->
+            
+              <button class="btn btn-SignUp btn-primary w-100 fs-5 text-center"[disabled]="!registerForm.valid" >SignUp</button>
+            </form>
+              <p class="text-center mt-3 fw-bold">Don't have account? <a href=""  > <span class="text-primary fw-light" >Sign Up</span></a></p>
+              <p class="OR d-flex justify-content-center fs-4">OR</p>
+             
+             <div class="google text-center mb-5">
+              <button class="btn btn-google ">  <img src="../assets/Google.png" class="m-2" alt=""> Continue with Google</button>
+             </div>
+               
+            
+      
+         
+        </div>
+        <div class="wallete  mt-4 col-sm-6 col-6  col-md-6">
+          <img src="../assets/Wallet.png" class=" w-75 " alt="" />
+        </div>
+      </div>
+    </div>
+  
+  </div>

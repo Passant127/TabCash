@@ -1,5 +1,9 @@
-<div class="home">
-  <nav class="navbar navbar-expand-lg ">
+<!-- <div class="vectorback position-absolute w-100 h-25 ">
+  <img src="../assets/Vector.png" class="w-100 " alt="">
+</div> -->
+
+<div class="home position-relative mb-5 mx-auto">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid mb-5 ps-5 pe-5">
       <a class="navbar-brand w-25" href="#"
         ><img [src]="imgsrc" class="w-50" alt=""
@@ -18,7 +22,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active me-3" aria-current="page" href="#"
+            <a
+              class="nav-link active me-3"
+              aria-current="page"
+              routerLink="home"
               >Home</a
             >
           </li>
@@ -26,29 +33,44 @@
             <div class="line nav-link my-2"></div>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-3" href="#">About Us</a>
+            <a class="nav-link me-3" href="#about">About Us</a>
           </li>
           <li class="nav-item">
             <div class="line nav-link my-2"></div>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-3" href="#">Services</a>
+            <a class="nav-link me-3" href="#whatistabcash">What is Tab Cash</a>
           </li>
           <li class="nav-item">
             <div class="line nav-link my-2"></div>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-3" href="#">Contact Us</a>
+            <a class="nav-link me-3" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <div class="line nav-link my-2"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#footer">Contact Us</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-black" aria-current="page" routerLink="register"
+            <a
+              class="nav-link text-black"
+              aria-current="page"
+              routerLink="signup"
+              (click)="onsignup()"
               >Sign Up</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link login" aria-current="page" href="#" routerLink="login"
+            <a
+              class="nav-link login"
+              aria-current="page"
+              href="#"
+              routerLink="login"
+              (click)="gologin()"
               >Login</a
             >
           </li>
@@ -56,9 +78,9 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <div class="content d-flex justify-content-center align-content-center row">
-      <div class="rightinfo col-12 col-md-6">
+  <div class="container mb-5 pb-5 vh-100 land homedetails mb-5 pb-5">
+    <div class="content d-flex justify-content-center row">
+      <div class="rightinfo col-sm-12 col-md-6">
         <p class="help">We are here to help</p>
         <p class="control">Always stay in Control of your card</p>
         <div class="handle">
@@ -66,11 +88,182 @@
           <p>For parents , you can manage your child's wallet easily.</p>
           <p>Feel free to explore our services</p>
         </div>
-        <button class="btn rounded-5 download"> Download app</button>
+        <button class="btn rounded-5 download text-white">Download app</button>
       </div>
-      <div class="wallete col-6 col-md-6">
-        <img [src]="walletimg" class="ms-5 w-100 me-auto" alt="" />
+      <div class="wallete text-end col-sm-12 col-md-6">
+        <img [src]="walletimg" class="w-75" alt="" />
       </div>
     </div>
   </div>
+  <div id="about" class="about mt-5 pt-5 mb-5 pb-5">
+    <div class="container d-flex justify-content-center mt-5 pt-5">
+      <div class="row">
+        <div class="about-information   mt-5 col-sm-4 col-md-6">
+          <h2 class="aboutTitle mt-5">About Tab Cash</h2>
+          <p class="aboutslogan">
+            “Makes investment easy. Anyone can do it with Tabcash Wallet”
+          </p>
+          <p class="aboutdetails ">
+            TabCash Transfer is an international remittance service within the
+            ASEAN region. Recipients can receive money as soon as it is
+            transferred with a consistent exchange rate and a low transaction
+            fee. TabCash Transfer is ideal for everyone because both the sender
+            and recipient do not need to have a bank account. It is convenient,
+            quick, and safe, and you can send and receive money from the huge
+            number of operating location in the urban and rural areas.
+          </p>
+          <button class="btn rounded-5 readmore text-white">Read more</button>
+        </div>
+        <div class="aboutimg col-md-6 mt-5 text-end col-sm-4">
+          <img src="../assets/land1.png" class="w-100 mt-5" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="whatistabcash" class="what-tab-cash position-relative text-center">
+    <h2 class="text-center mb-5 pb-5 whatTitle">
+      Tab Cash - What will you get with
+    </h2>
+    <div class="circle">
+      <img src="../assets/Ellipse 14.png" alt="" />
+    </div>
+    <div class="container pt-5">
+      <div class="row p-4 mb-5">
+        <div class="col-md-6 col-sm-4 ">
+          <img src="../assets/land2.png" class="w-75" alt="" />
+        </div>
+        <div class="col-md-6  col-sm-4">
+          <h2 class="head">Show your expenses and control them easily.</h2>
+          <p class="details">
+            You can show your insights , what you spent and what you get easily
+            .
+          </p>
+          <p class="how-to-use">How to use it</p>
+        </div>
+      </div>
+      <div class="row p-4 m-5">
+        <div class="col-md-6 col-sm-4 ">
+          <h2 class="head">Scanning to buy</h2>
+          <p class="details">
+            With TabCash , buying apps, games, music, and shopping online is
+            secure and easy without having to use your credit card , Just scan
+            or buy.
+          </p>
+          <p class="how-to-use">How to use Scanning option</p>
+        </div>
+        <div class="col-md-6 col-sm-4 ">
+          <img src="../assets/land3.png" class="w-50" alt="" />
+        </div>
+      </div>
+      <div class="row p-4 mb-5">
+        <div class="col-md-6 col-sm-4">
+          <img src="../assets/land4.png" class="w-75" alt="" />
+        </div>
+        <div class="col-md-6 col-sm-4 ">
+          <h2 class="head">Parent’s control</h2>
+          <p class="details">
+            If you are a parent m you can control your child’s account easily ,
+            you can allow them buying online , transferring money or just
+            reject. them.
+          </p>
+          <p class="how-to-use">How to use Internet package</p>
+        </div>
+      </div>
+      <div class="row p-4 m-5">
+        <div class="col-md-6 col-sm-4">
+          <h2 class="head">Money transfer</h2>
+          <p class="details">
+            Transfer money in a few seconds either to another TabCash Wallet
+            account .
+          </p>
+          <p class="how-to-use">How to transfer money to TabCash Wallet</p>
+        </div>
+        <div class="col-md-6 sol-sm-4">
+          <img src="../assets/money transfer.png" class="w-75" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services" class="services  text-center" >
+    <div class="title mb-5">
+      <h2 class="mt-5  pt-5 whatTitle">
+        TabCash - Your Trusted Financial Advisor
+      </h2>
+      <p>Services available at Tab cash Transfer Operating locations</p>
+    </div>
+    <!-- <div class="circle position-relative text-end">
+    <img src="../assets/Ellipse 14.png" alt="">
+  </div> -->
+    <div class="container pt-5 ">
+      <div class="row">
+        <div
+          class="services-info mt-5 col-md-3 col-sm-12 pb-5 "
+          *ngFor="let res of results ; let i = index  " 
+   
+        >
+  
+          <img src={{res.src}} width="w-75"  class="mb-5" alt="" />
+          <p class="servicetitle fw-bold ">{{res.title}}</p>
+           <p class="servicedetails w-75 text-center ps-s ms-4">{{res.details}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class=" text-center mt-5">
+<div class="container-fluid">
+  <div class="row p-5">
+    <div class="col-md-4">
+      <p class="footer-title">Be the first to know</p>
+      <p>Subscribe to stay in the loop on new 
+        product launches, promotions, and more.</p>
+        <input type="text" name="" class="w-100 pb-2 m-2 dropmail " id="" placeholder="Drop your email adress here">
+        <button class="btn mt-5 w-50 fs-4 rounded-5 readmore text-white">Subscribe</button>
+    </div>
+    <div class="col-md-2">
+      <p class="footer-title">Tab_Cash</p>
+       <h6>Home</h6>
+       <h6>About Us</h6>
+       <h6>Features</h6>
+       <h6>Contact Us</h6>
+    </div>
+    <div class="col-md-2">
+      <p class="footer-title">Developers</p>
+       <h6>API Docs</h6>
+       <h6>Support</h6>
+       <h6>
+        Bug Bounty</h6>
+    
+    </div>
+   
+    <div class="col-md-3">
+      <p class="footer-title">Legal</p>
+
+       <h6> Privacy Statement</h6>
+       <h6>Cookies Settings</h6>
+       <h6>Terms of Use</h6>
+       <h6>Terms of Sale</h6>
+       <h6>CA Transparency Act</h6>
+       <h6>CA Cleaning Product Data</h6>
+       <h6>Commitment to Accessibility</h6>
+       <div class="linelegal mt-5"></div>
+       
+      
+   
+    
+    </div>
+    <div class="col-md-1  icons">
+      <i class="fa-brands fa-youtube w-100 icon"></i>
+      <i class="fa-brands fa-twitter w-100 icon"></i>
+      <i class="fa-brands fa-facebook w-100 icon"></i>
+      
+   
+    
+    </div>
+    <p class="text-end me-5 pt-4 fs-5">© 2021 TrueMoney Vietnam. Copyright registered.</p>
+
+   </div>
+   
+</div>
+
+  </footer>
 </div>
