@@ -39,6 +39,8 @@ https://drive.google.com/drive/folders/1BDjwKuDKF-PPn-T25RIsu0-VPC6nLgfY?usp=sha
 
 
 after download project this commands to open it
+to download node modules --> npm i 
+then 
 cd my-app
 ng serve --open
 
