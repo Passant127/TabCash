@@ -1,43 +1,71 @@
 <div class="loginsection position-absolute">
   <div class="circle w-50 position-relative top-0 start-0">
-    <img src="../assets/Ellipse 3.png" class="w-100" alt="">
+    <img src="../assets/Ellipse 3.png" class="w-100" alt="" />
   </div>
 
-
-  <div class="loginfo  position-absolute top-0 start-0 end-0 bottom-0 overflow-hidden ps-3">
-
-    <div class="content d-flex justify-content-center align-content-center pt-5 row ">
-      <div class="loginform m-auto col-sm-6 col-6 p-5 col-md-6 ">
-      <img src="../assets/waving-hand.png" class="mb-2" alt="">
+  <div
+    class="loginfo position-absolute top-0 start-0 end-0 bottom-0 overflow-hidden ps-3"
+  >
+    <div
+      class="content d-flex justify-content-center align-content-center pt-5 row"
+    >
+      <div class="loginform m-auto col-sm-6 col-6 p-5 col-md-6">
+        <img src="../assets/waving-hand.png" class="mb-2" alt="" />
         <p class="fw-bolder fs-3">Welcome!</p>
         <p>Please login to access your account.</p>
-        <form class="inputs "  [formGroup]="loginForm" (ngSubmit)="submitlogin(loginForm)">
-            <label for="email" class="mb-2 " >Email or user name</label>
-            <input type="text" name="email" id="email" class="form-control emailinput mb-4" formControlName="email">
-            <label for="password" class="mb-2" >Password</label>
-            <input type="password" name="password" id="password" class="form-control passwordinput mb-4" formControlName="password">
-          
-            <button class="btn btn-login btn-primary w-100 fs-5 text-center">Login</button>
-          </form>
-            <p class="text-center mt-3 fw-bold">Don't have account? <a href="" routerLink="signup" (click)="onsignup()" > <span class="text-primary fw-light" >Sign Up</span></a></p>
-            <p class="OR d-flex justify-content-center fs-4">OR</p>
-           
-           <div class="google text-center">
-            <button class="btn btn-google ">  <img src="../assets/Google.png" class="m-2" alt=""> Continue with Google</button>
-           </div>
-             
-          
-    
-       
+        <form
+          class="inputs"
+          [formGroup]="loginForm"
+          (ngSubmit)="submitlogin(loginForm)"
+        >
+          <label for="email" class="mb-2">Email or user name</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="form-control emailinput mb-4"
+            formControlName="email"
+          />
+          <label for="password" class="mb-2">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control passwordinput mb-4"
+            formControlName="password"
+          />
+
+          <button class="btn btn-login btn-primary w-100 fs-5 text-center">
+            Login
+          </button>
+        </form>
+        <p class="text-center mt-3 fw-bold">
+          Don't have account?
+          <a
+            href=""
+            routerLink="signup"
+            (click)="onsignup()"
+            class="text-decoration-none"
+          >
+            <span class="text-primary fw-light">Sign Up</span></a
+          >
+        </p>
+        <p class="OR d-flex justify-content-center fs-4">OR</p>
+
+        <div class="google text-center">
+          <button class="btn btn-google">
+            <img src="../assets/Google.png" class="m-2" alt="" /> Continue with
+            Google
+          </button>
+        </div>
       </div>
-    
-      <div class="wallete  mt-4 col-sm-6 col-6  col-md-6">
+
+      <div class="wallete mt-4 col-sm-6 col-6 col-md-6">
         <!-- <div class="logo ">
           <img src="../assets/logo.png" class=" w-25" alt="">
         </div> -->
-        <img src="../assets/Wallet.png" class=" w-75 " alt="" />
+        <img src="../assets/Wallet.png" class="w-75" alt="" />
       </div>
     </div>
   </div>
-
 </div>

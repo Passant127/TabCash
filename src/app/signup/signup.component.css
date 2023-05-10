@@ -1,6 +1,6 @@
 .SignUpsection {
     background: linear-gradient(#c1c4c8, #456eae);
-    height: 140vh;
+    height:250vh;
     width: 100%;
     
   }
@@ -13,7 +13,6 @@
   .SignUpform {
    
     width: 500px;
-    height: 1000px;
   
     background: #ffffff;
     border-radius: 15px;
@@ -67,17 +66,22 @@
   .btn-google img{
     width: 7%;
   }
-  .emailinput,.passwordinput{
+  .emailinput,.passwordinput , .nameinput{
     background: #ECF2F7;
     border: unset;
-  border-radius: 4px;
-  
-  
-  /* Inside auto layout */
-  
+    border-radius: 4px;
   flex: none;
   order: 1;
   flex-grow: 0;
   }
-  
+  .dobinput , .nationalinput{
+    background: #ECF2F7;
+    border: unset;
+    border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  }
+
   

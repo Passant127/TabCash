@@ -17,17 +17,24 @@ export class SignupComponent {
     // How to know that is my in html ? we use binding then now go to html
     constructor(private _AuthService :AuthService, private _Router:Router ) {}
     registerForm: FormGroup = new FormGroup({
-      name: new FormControl(null, [
+      firstName: new FormControl(null, [
         Validators.required,
-        Validators.minLength(3),
-        Validators.maxLength(5),
+      ]),
+      lastName: new FormControl(null, [
+        Validators.required,
       ]),
       email: new FormControl(null),
       password: new FormControl(null),
-      rePassword: new FormControl(null),
       phone: new FormControl(null, [
           Validators.required,    
-          Validators.pattern(/^(02)?(01)[0-25][0-9]{8}$/)])
+          Validators.pattern(/^(02)?(01)[0-25][0-9]{8}$/)]),
+          nationalId: new FormControl(null),  
+          address: new FormControl(null),  
+          gender: new FormControl(null),
+          age: new FormControl(null),
+          dob: new FormControl(null),
+          username: new FormControl(null)
+    
     });
     err:string =''
     onsubmit(formData: FormGroup) {
@@ -45,6 +52,10 @@ export class SignupComponent {
   
       }
       )
+  
+    }
+    onlogin(){
+      this._Router.navigate(["/login"])
   
     }
   }
